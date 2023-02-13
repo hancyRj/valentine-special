@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    color: white;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(217,13,13,1) 52%, rgba(252,176,69,1) 100%);
+}
+header{
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+}
+header .logo{
+    font-size: 4rem;
+    text-decoration: none;
+    font-weight: 700;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+li{
+    margin-right: 20px;
+    list-style: none;
+}
+nav a{
+    padding: 4px 10px;
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 600;
+}
+nav a:hover{
+    background-color: white;
+    color: brown;
+    border-radius: 3px;
+}
+nav a.active{
+    background-color: white;
+    color: brown;
+    border-radius: 3px;
+    
+}
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+}
+main h1{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+main p{   
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -20px;
+    z-index: 1;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.heart {
+    background-color: #d111b7;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    transform: rotate(45deg);
+}
+    .heart::before, .heart::after {
+      content: "";
+      width: 50px;
+      height: 50px;
+      background-color: #d111b7;
+      position: absolute;
+      border-radius: 50%;
+    }
+    
+    .heart::before {
+      left: -25px;
+    }
+    
+    .heart::after {
+      top: -25px;
+    }
+    @media (max-width:850px){
+        header{
+            display: none;
+        }
+        main{
+            padding: 0 2%;
+        }
+        main h1{
+            font-size: 2rem;
+        }
+        main p{
+            font-size: 1rem;
+        }
+    }
+ 
+  
+  
+  
+  
+ 
+  
